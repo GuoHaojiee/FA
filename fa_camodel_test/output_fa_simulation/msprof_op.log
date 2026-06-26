@@ -1,3 +1,0 @@
-2026-06-23 13:25:07 [WARN]  The option "--application" will be deprecated in future version. It is recommended to specify <app> [arguments] instead.
-2026-06-23 13:25:07 [ERROR] Device profiling is not supported on current chip.
-2026-06-23 13:25:07 [INFO]  Use msprof op --help or msprof op simulator --help for more details

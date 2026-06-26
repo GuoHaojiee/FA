@@ -1,0 +1,6 @@
+op_test_template/msprof_output/
+build/
+test_fa_builtin
+op_test_template/test_fa_builtin
+*.o
+*.dump
