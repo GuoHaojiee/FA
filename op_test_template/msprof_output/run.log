@@ -1,0 +1,232 @@
+========================================
+CANN CAModel Simulator Test
+aclnnFlashAttentionScoreV2
+Target SoC: Ascend950PR_9599
+========================================
+2026-06-29 04:25:03 [INFO]  Op profiling analysis start.
+2026-06-29 04:25:03 [INFO]  Running simulation task: Binary Simulation Running, use simulator Ascend950PR 9599 by --soc-version
+[INFO] Config file is found, path is /home/guohaojie/Ascend/cann-9.0.0/x86_64-linux/simulator/dav_3510/lib/config_stars.json.
+[FuncCache]: size:0x20000, line_size:128, way_num:16, line_num:1024, idx_num:64
+             idx_lsb:7, idx_mask:0x3f, tag_lsb:13, tag_mask:0xffffffffffffffff, ofst_mask:0x7f
+
+[TmSim]: Run in serial mode.
+[INFO] Config file [config.json] from model dynamic library path. Path: /home/guohaojie/Ascend/cann-9.0.0/x86_64-linux/simulator/dav_3510/lib/config.json
+[INFO] AicWrapper attach AIC 0, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 1, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 2, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 3, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 4, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 5, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 6, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 7, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 8, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 9, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 10, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 11, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 12, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 13, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 14, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 15, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 16, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 17, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 18, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 19, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 20, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 21, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 22, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 23, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 24, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 25, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 26, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 27, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 28, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 29, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 30, num_vec_core=2, num_subcore=3
+[INFO] AicWrapper attach AIC 31, num_vec_core=2, num_subcore=3
+[INFO] Chip 0 AIC / Scheduler / Soc periods: 200.0000 / 200.0000 / 105.0000
+[INFO] chip 0 die 0 device created
+================================================================================
+>>>>                                                                        
+>>>>                             " PEM MODEL "                                
+>>>>             Total no. of 1 chip(s) Model Init Success!                
+>>>>                                                                        
+================================================================================
+[INFO] Model Start Time: 2026-06-29 04:25:05
+[DRVSTUB_LOG] driver_api.c:556 sendSwapBuf:swapbuf_base_addr:10000000
+[DRVSTUB_LOG] driver_api.c:557 sendSwapBuf:sq:0 swapbuf_addr:10000000
+[DRVSTUB_LOG] driver_api.c:556 sendSwapBuf:swapbuf_base_addr:10000000
+[DRVSTUB_LOG] driver_api.c:557 sendSwapBuf:sq:1 swapbuf_addr:10000040
+ACL initialized successfully
+Device set to 0
+
+========== SCENARIO 2: FTT Attention ==========
+Shape: (16, 30, 192), head_num=8, head_dim=24
+Scale: 0.2041, input_layout: BSH
+
+Workspace size: 16778240 bytes
+[INFO] <ProfInit> Start profiling on kernel: FlashAttentionScore_236874ba12878eb501b11f3f4feb2ce4_2328361008425337360_mix_aic
+[info] [0000000585] [block_start]           : AIC_MIX, task_id=0, core_id=0, main_blk_id=0
+[info] [0000000585] [block_start]           : AIC_MIX, task_id=0, core_id=1, main_blk_id=1
+[info] [0000000585] [block_start]           : AIC_MIX, task_id=0, core_id=0, main_blk_id=0, sub_blk_id=0
+[info] [0000000585] [block_start]           : AIC_MIX, task_id=0, core_id=1, main_blk_id=0, sub_blk_id=1
+[info] [0000000586] [block_start]           : AIC_MIX, task_id=0, core_id=2, main_blk_id=2
+[info] [0000000586] [block_start]           : AIC_MIX, task_id=0, core_id=2, main_blk_id=1, sub_blk_id=0
+[info] [0000000587] [block_start]           : AIC_MIX, task_id=0, core_id=3, main_blk_id=3
+[info] [0000000587] [block_start]           : AIC_MIX, task_id=0, core_id=3, main_blk_id=1, sub_blk_id=1
+[info] [0000000588] [block_start]           : AIC_MIX, task_id=0, core_id=4, main_blk_id=4
+[info] [0000000588] [block_start]           : AIC_MIX, task_id=0, core_id=4, main_blk_id=2, sub_blk_id=0
+[info] [0000000589] [block_start]           : AIC_MIX, task_id=0, core_id=5, main_blk_id=5
+[info] [0000000589] [block_start]           : AIC_MIX, task_id=0, core_id=5, main_blk_id=2, sub_blk_id=1
+[info] [0000000590] [block_start]           : AIC_MIX, task_id=0, core_id=6, main_blk_id=6
+[info] [0000000590] [block_start]           : AIC_MIX, task_id=0, core_id=6, main_blk_id=3, sub_blk_id=0
+[info] [0000000591] [block_start]           : AIC_MIX, task_id=0, core_id=7, main_blk_id=7
+[info] [0000000591] [block_start]           : AIC_MIX, task_id=0, core_id=7, main_blk_id=3, sub_blk_id=1
+[info] [0000000592] [block_start]           : AIC_MIX, task_id=0, core_id=8, main_blk_id=8
+[info] [0000000592] [block_start]           : AIC_MIX, task_id=0, core_id=8, main_blk_id=4, sub_blk_id=0
+[info] [0000000593] [block_start]           : AIC_MIX, task_id=0, core_id=9, main_blk_id=9
+[info] [0000000593] [block_start]           : AIC_MIX, task_id=0, core_id=9, main_blk_id=4, sub_blk_id=1
+[info] [0000000594] [block_start]           : AIC_MIX, task_id=0, core_id=10, main_blk_id=10
+[info] [0000000594] [block_start]           : AIC_MIX, task_id=0, core_id=10, main_blk_id=5, sub_blk_id=0
+[info] [0000000595] [block_start]           : AIC_MIX, task_id=0, core_id=11, main_blk_id=11
+[info] [0000000595] [block_start]           : AIC_MIX, task_id=0, core_id=11, main_blk_id=5, sub_blk_id=1
+[info] [0000000596] [block_start]           : AIC_MIX, task_id=0, core_id=12, main_blk_id=12
+[info] [0000000596] [block_start]           : AIC_MIX, task_id=0, core_id=12, main_blk_id=6, sub_blk_id=0
+[info] [0000000597] [block_start]           : AIC_MIX, task_id=0, core_id=13, main_blk_id=13
+[info] [0000000597] [block_start]           : AIC_MIX, task_id=0, core_id=13, main_blk_id=6, sub_blk_id=1
+[info] [0000000598] [block_start]           : AIC_MIX, task_id=0, core_id=14, main_blk_id=14
+[info] [0000000598] [block_start]           : AIC_MIX, task_id=0, core_id=14, main_blk_id=7, sub_blk_id=0
+[info] [0000000599] [block_start]           : AIC_MIX, task_id=0, core_id=15, main_blk_id=15
+[info] [0000000599] [block_start]           : AIC_MIX, task_id=0, core_id=15, main_blk_id=7, sub_blk_id=1
+[info] [0000000600] [block_start]           : AIC_MIX, task_id=0, core_id=16, main_blk_id=8, sub_blk_id=0
+[info] [0000000601] [block_start]           : AIC_MIX, task_id=0, core_id=17, main_blk_id=8, sub_blk_id=1
+[info] [0000000602] [block_start]           : AIC_MIX, task_id=0, core_id=18, main_blk_id=9, sub_blk_id=0
+[info] [0000000603] [block_start]           : AIC_MIX, task_id=0, core_id=19, main_blk_id=9, sub_blk_id=1
+[info] [0000000604] [block_start]           : AIC_MIX, task_id=0, core_id=20, main_blk_id=10, sub_blk_id=0
+[info] [0000000605] [block_start]           : AIC_MIX, task_id=0, core_id=21, main_blk_id=10, sub_blk_id=1
+[info] [0000000606] [block_start]           : AIC_MIX, task_id=0, core_id=22, main_blk_id=11, sub_blk_id=0
+[info] [0000000607] [block_start]           : AIC_MIX, task_id=0, core_id=23, main_blk_id=11, sub_blk_id=1
+[info] [0000000608] [block_start]           : AIC_MIX, task_id=0, core_id=24, main_blk_id=12, sub_blk_id=0
+[info] [0000000609] [block_start]           : AIC_MIX, task_id=0, core_id=25, main_blk_id=12, sub_blk_id=1
+[info] [0000000610] [block_start]           : AIC_MIX, task_id=0, core_id=26, main_blk_id=13, sub_blk_id=0
+[info] [0000000611] [block_start]           : AIC_MIX, task_id=0, core_id=27, main_blk_id=13, sub_blk_id=1
+[info] [0000000612] [block_start]           : AIC_MIX, task_id=0, core_id=28, main_blk_id=14, sub_blk_id=0
+[info] [0000000613] [block_start]           : AIC_MIX, task_id=0, core_id=29, main_blk_id=14, sub_blk_id=1
+[info] [0000000614] [block_start]           : AIC_MIX, task_id=0, core_id=30, main_blk_id=15, sub_blk_id=0
+[info] [0000000615] [block_start]           : AIC_MIX, task_id=0, core_id=31, main_blk_id=15, sub_blk_id=1
+[info] [0000013087] [block_end]             : AIC, task_id=0, core_id=15, block_id=15
+[info] [0000013140] [block_end]             : AIC, task_id=0, core_id=1, block_id=1
+[info] [0000013194] [block_end]             : AIC, task_id=0, core_id=14, block_id=14
+[info] [0000013217] [block_end]             : AIC, task_id=0, core_id=3, block_id=3
+[info] [0000013218] [block_end]             : AIC, task_id=0, core_id=7, block_id=7
+[info] [0000013224] [block_end]             : AIC, task_id=0, core_id=6, block_id=6
+[info] [0000013292] [block_end]             : AIC, task_id=0, core_id=12, block_id=12
+[info] [0000013347] [block_end]             : AIC, task_id=0, core_id=5, block_id=5
+[info] [0000013353] [block_end]             : AIC, task_id=0, core_id=2, block_id=2
+[info] [0000013369] [block_end]             : AIC, task_id=0, core_id=4, block_id=4
+[info] [0000013375] [block_end]             : AIC, task_id=0, core_id=9, block_id=9
+[info] [0000013415] [block_end]             : AIC, task_id=0, core_id=0, block_id=0
+[info] [0000013464] [block_end]             : AIC, task_id=0, core_id=8, block_id=8
+[info] [0000013529] [block_end]             : AIC, task_id=0, core_id=11, block_id=11
+[info] [0000013559] [block_end]             : AIC, task_id=0, core_id=10, block_id=10
+[info] [0000013576] [block_end]             : AIC, task_id=0, core_id=13, block_id=13
+[info] [0000014379] [block_end]             : AIV, task_id=0, core_id=29, block_id=14, sub_block_id=1
+[info] [0000014384] [block_end]             : AIV, task_id=0, core_id=17, block_id=8, sub_block_id=1
+[info] [0000014397] [block_end]             : AIV, task_id=0, core_id=14, block_id=7, sub_block_id=0
+[info] [0000014405] [block_end]             : AIV, task_id=0, core_id=9, block_id=4, sub_block_id=1
+[info] [0000014418] [block_end]             : AIV, task_id=0, core_id=2, block_id=1, sub_block_id=0
+[info] [0000014421] [block_end]             : AIV, task_id=0, core_id=5, block_id=2, sub_block_id=1
+[info] [0000014437] [block_end]             : AIV, task_id=0, core_id=31, block_id=15, sub_block_id=1
+[info] [0000014474] [block_end]             : AIV, task_id=0, core_id=11, block_id=5, sub_block_id=1
+[info] [0000014475] [block_end]             : AIV, task_id=0, core_id=23, block_id=11, sub_block_id=1
+[info] [0000014476] [block_end]             : AIV, task_id=0, core_id=7, block_id=3, sub_block_id=1
+[info] [0000014491] [block_end]             : AIV, task_id=0, core_id=6, block_id=3, sub_block_id=0
+[info] [0000014491] [block_end]             : AIV, task_id=0, core_id=19, block_id=9, sub_block_id=1
+[info] [0000014503] [block_end]             : AIV, task_id=0, core_id=1, block_id=0, sub_block_id=1
+[info] [0000014504] [block_end]             : AIV, task_id=0, core_id=13, block_id=6, sub_block_id=1
+[info] [0000014505] [block_end]             : AIV, task_id=0, core_id=22, block_id=11, sub_block_id=0
+[info] [0000014509] [block_end]             : AIV, task_id=0, core_id=0, block_id=0, sub_block_id=0
+[info] [0000014509] [block_end]             : AIV, task_id=0, core_id=3, block_id=1, sub_block_id=1
+[info] [0000014516] [block_end]             : AIV, task_id=0, core_id=20, block_id=10, sub_block_id=0
+[info] [0000014524] [block_end]             : AIV, task_id=0, core_id=8, block_id=4, sub_block_id=0
+[info] [0000014531] [block_end]             : AIV, task_id=0, core_id=10, block_id=5, sub_block_id=0
+[info] [0000014532] [block_end]             : AIV, task_id=0, core_id=21, block_id=10, sub_block_id=1
+[info] [0000014532] [block_end]             : AIV, task_id=0, core_id=30, block_id=15, sub_block_id=0
+[info] [0000014533] [block_end]             : AIV, task_id=0, core_id=4, block_id=2, sub_block_id=0
+[info] [0000014534] [block_end]             : AIV, task_id=0, core_id=27, block_id=13, sub_block_id=1
+[info] [0000014535] [block_end]             : AIV, task_id=0, core_id=16, block_id=8, sub_block_id=0
+[info] [0000014537] [block_end]             : AIV, task_id=0, core_id=12, block_id=6, sub_block_id=0
+[info] [0000014541] [block_end]             : AIV, task_id=0, core_id=28, block_id=14, sub_block_id=0
+[info] [0000014556] [block_end]             : AIV, task_id=0, core_id=25, block_id=12, sub_block_id=1
+[info] [0000014561] [block_end]             : AIV, task_id=0, core_id=18, block_id=9, sub_block_id=0
+[info] [0000014585] [block_end]             : AIV, task_id=0, core_id=15, block_id=7, sub_block_id=1
+[info] [0000014607] [block_end]             : AIV, task_id=0, core_id=24, block_id=12, sub_block_id=0
+[info] [0000014618] [block_end]             : AIV, task_id=0, core_id=26, block_id=13, sub_block_id=0
+Operator executed successfully!
+SCENARIO_2_DONE
+[INFO] Model Stop Time: 2026-06-29 04:26:46
+Model RUN TIME: 100419 ms
+[INFO] Total tick: 14865
+[INFO] Model stopped successfully.
+
+========================================
+All tests completed!
+========================================
+2026-06-29 04:26:49 [INFO]  Profiling running finished. All task success.
+2026-06-29 04:26:49 [INFO]  Start parse dump file
+2026-06-29 04:26:50 [INFO]  Extract 5315 relations from kernel
+2026-06-29 04:26:50 [WARN]  Kernel missed debug_line information. If you need code call stack, please recompile kernel with -g option
+2026-06-29 04:26:51 [WARN]  Code call stack is empty
+2026-06-29 04:26:51 [WARN]  Lack of code info of files
+2026-06-29 04:26:52 [INFO]  Core operator results run in simulator as follow:
+core_name           duration_time(us)   running_time(us)    
+core0.cubecore0     3.19                2.19                
+core0.veccore0      3.31                3.3                 
+core0.veccore1      3.32                3.3                 
+core1.cubecore0     3.28                2.29                
+core1.veccore0      3.28                3.26                
+core1.veccore1      3.25                3.23                
+core10.cubecore0    3.46                2.18                
+core10.veccore0     3.29                3.28                
+core10.veccore1     3.26                3.24                
+core11.cubecore0    3.46                2.19                
+core11.veccore0     3.26                3.24                
+core11.veccore1     3.26                3.24                
+core12.cubecore0    3.29                2.28                
+core12.veccore0     3.31                3.3                 
+core12.veccore1     3.28                3.26                
+core13.cubecore0    3.43                2.19                
+core13.veccore0     3.29                3.27                
+core13.veccore1     3.26                3.24                
+core14.cubecore0    3.24                2.24                
+core14.veccore0     3.25                3.24                
+core14.veccore1     3.25                3.23                
+core15.cubecore0    3.2                 2.29                
+core15.veccore0     3.23                3.22                
+core15.veccore1     3.25                3.24                
+core2.cubecore0     3.36                2.21                
+core2.veccore0      3.31                3.29                
+core2.veccore1      3.22                3.21                
+core3.cubecore0     3.25                2.24                
+core3.veccore0      3.28                3.27                
+core3.veccore1      3.25                3.23                
+core4.cubecore0     3.36                2.13                
+core4.veccore0      3.28                3.27                
+core4.veccore1      3.26                3.25                
+core5.cubecore0     3.32                2.15                
+core5.veccore0      3.26                3.25                
+core5.veccore1      3.3                 3.28                
+core6.cubecore0     3.3                 2.19                
+core6.veccore0      3.3                 3.29                
+core6.veccore1      3.29                3.27                
+core7.cubecore0     3.25                2.24                
+core7.veccore0      3.22                3.21                
+core7.veccore1      3.28                3.22                
+core8.cubecore0     3.37                2.21                
+core8.veccore0      3.27                3.26                
+core8.veccore1      3.25                3.24                
+core9.cubecore0     3.36                2.18                
+core9.veccore0      3.29                3.28                
+core9.veccore1      3.28                3.27                
+2026-06-29 04:26:52 [INFO]  Profiling results saved in /home/guohaojie/Guo/FA原生算子性能分析/op_test_template/msprof_output/OPPROF_20260629042503_FWMIRSZUHRFRAUVQ
+2026-06-29 04:26:54 [INFO]  Profiling data parse finished.
+2026-06-29 04:26:54 [INFO]  Op profiling finish. Welcome to next use.
